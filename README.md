@@ -197,7 +197,7 @@ Este es el caso más completo: combina la refactorización de Power Query con la
 
 **Después — conexión directa a Databricks:**
 
-![VENTAS linaje después](ventas_connections_new.png)
+![VENTAS linaje después](ventas_connectios_new.png)
 
 ### Lo que cambió en Power Query
 
