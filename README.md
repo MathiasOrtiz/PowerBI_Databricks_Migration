@@ -82,11 +82,11 @@ Cada motor haciendo lo que mejor sabe hacer.
 
 **Antes (~30–48 min por ejecución):**
 
-![DF_CLIENTES historial antes](DIMENSIONES_CLIENTES_OLD.png)
+![DF_CLIENTES historial antes](clientes_old.png)
 
 **Después (segundos):**
 
-![DF_CLIENTES historial después](DIMENSIONES_CLIENTES_NEW.png)
+![DF_CLIENTES historial después](clientes_new.png)
 
 ### Traducción de Power Query a SQL
 
@@ -145,11 +145,11 @@ in
 
 **Antes — cancelaciones y errores:**
 
-![DF_VENTAS historial antes](GEN_VENTAS_DL_ID_U13M_OLD.png)
+![DF_VENTAS historial antes](df_ventas_old.png)
 
 **Después — ejecución estable:**
 
-![DF_VENTAS historial después](GEN_VENTAS_DL_ID_U13M_NEW.png)
+![DF_VENTAS historial después](df_ventas_new.png)
 
 ### Antes — dependencias en cadena
 ```
@@ -183,21 +183,21 @@ Este es el caso más completo: combina la refactorización de Power Query con la
 
 **Antes — 72 consultas, 20+ pasos por tabla:**
 
-![VENTAS Power Query antes](IC_VENTAS_STEPS_OLD.png)
+![VENTAS Power Query antes](ventas_steps_old.png)
 
 **Después — 33 consultas, 1 paso (Origen):**
 
-![VENTAS Power Query después](IC_VENTAS_STEPS_NEW.png)
+![VENTAS Power Query después](ventas_steps_new.png)
 
 ### Linaje — antes y después
 
 **Antes — 7 dataflows de entrada:**
 
-![VENTAS linaje antes](IC_VENTAS_CONNECTIONS_OLD.png)
+![VENTAS linaje antes](ventas_connections_old.png)
 
 **Después — conexión directa a Databricks:**
 
-![VENTAS linaje después](IC_VENTAS_CONNECTIONS_NEW.png)
+![VENTAS linaje después](ventas_connections_new.png)
 
 ### Lo que cambió en Power Query
 
