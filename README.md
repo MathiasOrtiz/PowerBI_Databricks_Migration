@@ -203,7 +203,7 @@ Este es el caso más completo: combina la refactorización de Power Query con la
 
 **Antes — decenas de pasos por tabla:**
 ```m
-// BASES_DD — pasos aplicados (fragmento):
+// BASES — pasos aplicados (fragmento):
 // Paso 1
 // Paso 2
 // Paso 3
@@ -228,7 +228,7 @@ Este es el caso más completo: combina la refactorización de Power Query con la
 
 **Después — 1 paso por tabla:**
 ```m
-// BASES_DD — pasos aplicados:
+// BASES — pasos aplicados:
 // Origen  ← único paso
 
 = Value.NativeQuery(
@@ -236,7 +236,9 @@ Este es el caso más completo: combina la refactorización de Power Query con la
         "adb-xxx.azuredatabricks.net",
         "/sql/1.0/warehouses/"
     ),
-    "SELECT * FROM catalog.schema.warehouses WHERE activo = 1"
+    "
+    Consulta SQL aquí...
+    "
 )
 // Toda la lógica vive en SQL dentro de Databricks.
 // Power Query solo conecta y trae el resultado.
@@ -313,7 +315,7 @@ Esto eliminó la necesidad de revisar manualmente el historial de actualización
 
 ```
 ✅ DATAFLOW UPDATE OK :)
-Workspace: COMMAND_CENTER_PY
+Workspace: PRODUCTION
 Dataflow:  DF_VENTAS
 Estado:    Success
 Inicio:    27/04/2026 07:03
@@ -350,9 +352,9 @@ Fin:       27/04/2026 07:25
 
 ## Autor
 
-**Mathias Ortiz** — Supervisor del Command Center  
+**Ing. Mathias Ortiz** 
 [LinkedIn](https://www.linkedin.com/in/mathiasortiz) · [GitHub](https://github.com/MathiasOrtiz)
 
 ---
 
-*Los nombres de componentes fueron modificados para no exponer información interna. Este README documenta una iniciativa real de migración realizada en abril de 2026.*
+*Los nombres de componentes fueron modificados para no exponer información interna. Este README documenta una migración realizada en abril de 2026.*
