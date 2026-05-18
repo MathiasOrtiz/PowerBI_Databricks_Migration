@@ -324,6 +324,8 @@ Fin:       27/04/2026 07:25
 
 ---
 
+![Alertas_Teams](status_team.png)
+
 ## Stack utilizado
 
 - **Power BI Service** — consumo, modelado semántico y visualización
