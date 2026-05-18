@@ -324,7 +324,7 @@ Fin:       27/04/2026 07:25
 
 ---
 
-![Alertas_Teams](status_team.png)
+![Alertas_Teams](new_status_team.png)
 
 ## Stack utilizado
 
